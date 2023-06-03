@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+    }
+    .left img{
+        width: 90px;
+        filter: invert(100%);
+    }
+    .text{
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 13px;
+    }
+    .mid{
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: x-large;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 30px 25px;
+    }
+    .navbar li a:hover{
+        color: aqua;
+        text-decoration: underline;
+        text-decoration-color: aqua;
+    }
+    .navbar li a:active{
+        color: rgb(10, 220, 220);
+    }
+    .right{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        display: inline-block;
+    }
+    .btn{
+        margin: 5px 17px;
+        background-color: gold;
+        border-radius: 8px;
+        font-size: larger;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: goldenrod;
+    }
+    .btn a{
+        text-decoration: none;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('image/anirudh-Xu4Pz7GI9JY-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/barbell-isolated-cartoon-design-vector-31809664.jpg" alt="">
+            <div class="text">Fitness Area</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Fitness Area.html" target="_blank">Home</a></li>
+                <li><a href="About us.html" target="_blank">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li> 
+            </ul>
+         </div>
+        <div class="right">
+            <button class="btn"><a href="Register.php" target="_blank">Register</a></button>
+        </div>
+    </header>
+</body>
+</html>

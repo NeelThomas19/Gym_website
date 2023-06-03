@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>About Us</title>
+</head>
+<style>
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+    }
+    .left img{
+        width: 90px;
+        filter: invert(100%);
+    }
+    .text{
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 13px;
+    }
+    .mid{
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: x-large;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 30px 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .navbar li a:hover{
+        color: aqua;
+        text-decoration: underline;
+        text-decoration-color: aqua;
+    }
+    .navbar li a:active{
+        color: rgb(10, 220, 220);
+    }
+    .right{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        display: inline-block;
+    }
+    .btn{
+        margin: 5px 17px;
+        background-color: gold;
+        border-radius: 8px;
+        font-size: larger;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn:hover{
+        background-color: goldenrod;
+    }
+    .btn a{
+        text-decoration: none;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('image/garrett-butler-UrJ-fn2iRUM-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .dropbtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: x-large;
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        z-index: 1;
+        width: max-content;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover 
+    {
+        background-color: transparent;
+    }
+
+    .dropdown:hover .dropdown-content 
+    {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn 
+    {
+        background-color: transparent;
+    }
+    .equ{
+        background-color: rgb(20, 25, 188);
+        border: 2px solid greenyellow;
+        border-radius: 10px;
+        color: white;
+        width: 45%;
+        margin: 190px 120px;
+        height: 160px;
+        text-align: center;
+        padding: 12px 5px;
+        position: absolute;
+        box-shadow: 10px 10px red;
+        animation-name: equ;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes equ {
+        from{
+                width: 40%;
+        }
+        to{
+                width: 45%;
+        }
+    }
+    .trainer{
+        background-color: rgb(20, 25, 188);
+        border: 2px solid greenyellow;
+        border-radius: 10px;
+        color: white;
+        width: 45%;
+        margin: 210px 850px;
+        height: 160px;
+        text-align: center;
+        padding: 12px 17px;
+        box-shadow: 10px 10px red;
+        animation-name: trainer;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes trainer {
+        from{
+                width: 35%;
+        }
+        to{
+                width: 40%;
+        }
+    }
+    
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/barbell-isolated-cartoon-design-vector-31809664.jpg" alt="">
+            <div class="text">Fitness Area</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Fitness Area.html" >Home</a></li>
+                <li><a href="About us.html" >About Us</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                    <div class="dropdown-content">
+                        <a href="tel:8849950258"><i class="glyphicon glyphicon-earphone"></i>&nbsp;Call us at 8849950258</a>
+                       <a href="mailto: 20CS095@charusat.edu.in"><i class="glyphicon glyphicon-envelope"></i>&nbsp;Email us</a>
+                    </div>
+                  </div></li>
+            </ul>
+         </div>
+        <div class="right">
+            <button class="btn"><a href="Register.html">Register</a></button>
+        </div>
+    </header>
+    <div class="equ">
+        <h2><i class="glyphicon glyphicon-tasks"></i>Our gym has some of the best euipments needed for you to stay in shape.</h2>
+    </div>
+    <div class="trainer">
+        <h2><i class="glyphicon glyphicon-star"></i>We have hired some professional trainers so that you can train professionally</h2>
+    </div>
+</body>
+</html>
